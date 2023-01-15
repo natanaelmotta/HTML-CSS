@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: grey;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: grey;
+            padding: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.678);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px rgba(0, 0, 0, 0.712);
+
+        }
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(246, 248, 250);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 3px;
+            
+        }
+        footer > p {
+            margin: 0px;
+        }
+        section {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div></div><!-- Box level-->
+    <span></span><!-- Inline Level-->
+
+    <!-- Abaixo seguem as Divs semânticas -->
+    <header> <!-- Cabeçalho-->
+        <h1>Meu site</h1>
+        <Nav> <!-- Navegações-->
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </Nav>
+    </header>
+    <main><!-- Menu-->
+        <section id="assuntos">
+            <p>Esportes, Política e Tecnologia</p>
+
+        </section>
+        <section id="notícias">
+            <h2>Notícia sobre o Brasil</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi vel necessitatibus voluptates ullam impedit earum sequi unde, voluptate, voluptatem, reprehenderit officia consequatur asperiores omnis corrupti. Quas incidunt inventore vitae dolore!</p>
+            <aside>Escrito por José</aside>
+            <article>
+
+            </article>
+
+        </section>
+
+
+    </main>
+    <footer><!-- Rodapé-->
+        <p>Desenvolvido por Natan Motta</p>
+
+    </footer>
+    
+</body>
+</html>

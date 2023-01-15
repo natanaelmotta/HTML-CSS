@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1><!-- Para imagens e videos de uso gratuito, site PEXELS-->
+    <hr>
+    <p>Tente abrir essa imagem em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- O source da menor foto sempre deve vir acima das demais. Seguir a ordem de menor pro maior.-->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <!-- Sempre se preocupar em tornar a imagem disponivel para todos os tipos de dispositivos, para diminuir a taxa de desistência no site -->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios</p>
+    <audio src="midia/audio.mp3" controls autoplay></audio>
+    <!-- Formatos de áudio que sempre irão reproduzir nos navegadores: MP3, WAV e OGG. Evitar WAV, muito pesado.-->
+    <audio autoplay controls> 
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <!-- Ter sempre várias opções de fomato do mesmo audio, caso algum formato não sja aceito, será carregado o próximio. Caso nenhum for reproduzido, informar o usuário da não compatibilidade e lhe dar a opção de baixar o audio-->
+    </audio>
+    <h1>Reproduzindo Vídeo hospedado localmente</h1> <!-- Formatos de vídeos mais compatíveis: MP4, M4V, WEBM, OGV. Aplicativo HANDBRAKE para conversão de vídeos -->
+    <h2>Da forma mais simples</h2> <!-- Formato para inserir vários videos-->
+    <video src="video/meuvideo.mp4" width="500"  autoplay controls></video>
+    <video src="video/meuvideo.webm" width="450" autoplay controls></video>
+    <h2>Outra forma</h2>
+    <video width="500" poster="imagens/thumb.jpg" controls>
+        <source src="video/meuvideo.mp4" type="video/mp4">
+    </video>
+    <hr>
+    <h1>Inserindo vídeos Externos</h1> <!-- Dessa forma não utiliza dados do servidor-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

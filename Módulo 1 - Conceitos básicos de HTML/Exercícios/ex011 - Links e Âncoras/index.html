@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!-- Sempre que for usar link externo, usar tag TARGET após o link, para que se abra uma nova guia-->
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <h2>Exemplo sem uso da target BLANK</h2> <!-- Ao clicar no link, a nova página do youtube irá sobrepor a página original-->
+    <p>Você também pode acessar o meu o meu <a href="https://youtube.com/cursoemvideo">canal no YouTube</a></p>
+    <h1>Usando links internos</h1> <!-- Para inserir novas paginas internas, os links devem estar na mesma página que a página original 'index'-->
+    <p>Acesse nossa <a href="pag002.html" rel="next">segunda página</a> do site</p>
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p>
+    <h1>Usando link para Download</h1>
+    <ul>
+        <li><a href="Favicon/favdownload.zip" download="favdownload.sip" type="aplication/zip"> Baixar o favicon</a></li>
+        <li><a href="Documento/Documento.docx" download="Documento.docx" type="aplication/docx"> Baixar documento</a></li>
+    </ul>
+</body>
+</html>

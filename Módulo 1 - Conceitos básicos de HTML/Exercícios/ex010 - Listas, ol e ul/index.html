@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        dd {
+            color: blue;
+            background-color:antiquewhite; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1">
+        <li>Acordar <!-- Não existe obrigação de uso no fechamento da tag li-->
+        <li>Tomar café</li>
+        <li>Estudar</li>
+        <li>Academia
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="square"> <!-- em ul não há sugestão em type. Tipos de ícones são: disc, circle e square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Arroz</li>
+        <li>Legumes</li>
+    </ul>  
+    <h2>Lista mista: Biscoitos e Doces</h2>
+    <ol>
+        <li>Biscoitos</li>
+        <ol type="a">
+            <li>Negresco</li>
+            <li>Passatempo</li>
+            <li>Mirabell</li>
+        </ol>
+
+        <li>Doces</li>
+        <ol type="a" start="4"> <!-- tag START para definir continuação do seguimento da lista superior, nesse caso, Biscoitos terminando em 'c', e Doces começando em 'd'. Número 4 representa a posição da letra d.-->
+            <li>Chocolate</li>
+            <li>Paçoca</li>
+            <li>Pé de moleque</li>
+        </ol>
+    </ol>
+    <h2>Lista de produtos de mercado</h2>
+    <ol>
+        <li>Legumes</li>
+        <ul type="square">
+            <li>Batata</li>
+            <ul type="circle">
+                <li>Batata doce</li>
+                <li>Batata palha</li>
+            </ul>
+            <li>Cenoura</li>
+            <li>Beterraba</li>
+        </ul>
+        <li>Verduras</li>
+        <ul type="square">
+            <li>Alface</li>
+            <li>Couve</li>
+            <li>Repolho</li>
+        </ul>
+        <li>Limpeza</li>
+        <ul type="square">
+            <li>Desifetante</li>
+            <li>Detergente</li>
+            <li>Sabão em pó</li>
+        </ul>
+    </ol>
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt><strong>HTML</strong></dt><!-- Termo-->
+        <dd><i>Linguagem de marcação para a criação de conteúdo de um site</i></dd> <!-- Definição-->
+        <dt><strong>CSS</strong></dt>
+        <dd><i>Linguagem de marcação para a criação do design de um site</i></dd>
+        <dt><strong>JavaScript</strong></dt>
+        <dd><i>Linguagem de programação para a criação de interatividade de um site</i></dd>
+    </dl>
+    
+</body>
+</html>

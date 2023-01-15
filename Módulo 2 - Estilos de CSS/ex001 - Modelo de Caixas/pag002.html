@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: grey;
+            height: 300px;
+            width: 300px;
+            border: 10px solid darkslateblue;
+
+            padding: 10px;
+
+            margin: 10px auto 40px auto;
+
+            outline: 5px dashed blueviolet;
+
+        }
+        a {
+            display: block;
+            border-width: 10px solid red;
+        }
+    </style>
+    <!-- Para pode centralizar uma caixa na tela, usar margin: auto. 
+    *Para simplificar o código style (shorthand), basta usar o primeiro nome do comando, e após o os dois pontos especificar cada característica, de pixel, cor e estilo. No caso de expecificação em pixel de tamanhos iguais pra todos os lados, basta informar  o número apenas uma vez.--> 
+</head>
+<body>
+    <h1>Exemplo de caixa Box level</h1><!--Box level-->
+    <p>Parágrafos também são exemplos de box-level, mas os <a href=""> links são exemplos de inline-level;</a>Vamos ver como tudo isso funciona.</p>
+    <h1>EM <i>INSPECIONAR</i></h1>
+    <p>Estilos automáticos em 'inspecionar', foram inseridos pelo navegador. <i>User agent</i></p>
+    <p>Todo páragrafo, ou caixa box level é um '<strong>display: block</strong>', e box inline level, <strong>display: inline block</strong> </p>
+</body>
+</html> <!-- Usar o dev tools (inspecionar) no navegador, irá auxiliar muito na hora de testar um determinado estilo.-->
